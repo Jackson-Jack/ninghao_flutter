@@ -43,11 +43,11 @@ class ContainerBoxDecorationDemo extends StatelessWidget {
               ),
               // borderRadius: BorderRadius.circular(16.0),
               boxShadow: [
-                BoxShadow(
+                BoxShadow(  // 阴影
                   offset: Offset(0.0, 16.0),
                   color: Color.fromRGBO(16, 20, 188, 1.0),
-                  blurRadius: 25.0,
-                  spreadRadius: -9.0,
+                  blurRadius: 25.0,   // 值越大模糊的程度就越明显
+                  spreadRadius: -9.0,   // 阴影扩大的程度，如果是正数就是扩大阴影的面积，负数则缩小
                 ),
               ],
               shape: BoxShape.circle,
@@ -113,7 +113,7 @@ class TextDemo extends StatelessWidget {
     return Text(
       '《 $_title 》—— $_author。君不见黄河之水天上来，奔流到海不复回。君不见高堂明镜悲白发，朝如青丝暮成雪。人生得意须尽欢，莫使金樽空对月。天生我材必有用，千金散尽还复来。烹羊宰牛且为乐，会须一饮三百杯。',
       textAlign: TextAlign.left,
-      style: _textStyle,
+      style: _textStyle,    //下划线表示类里面私有
       maxLines: 3,
       overflow: TextOverflow.ellipsis,
     );

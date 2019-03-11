@@ -21,8 +21,8 @@ class DrawerDemo extends StatelessWidget {
               image: DecorationImage(
                 image: NetworkImage(
                     'https://resources.ninghao.org/images/childhood-in-a-picture.jpg'),
-                fit: BoxFit.cover,
-                colorFilter: ColorFilter.mode(
+                fit: BoxFit.cover,    // 图片填充模式，cover充满整个屏幕
+                colorFilter: ColorFilter.mode(            // BlendMode 混合模板
                     Colors.yellow[400].withOpacity(0.6), BlendMode.hardLight),
               ),
             ),

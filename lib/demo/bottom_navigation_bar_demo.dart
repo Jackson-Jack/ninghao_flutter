@@ -22,9 +22,9 @@ class _BottomNavigationBarDemoState extends State<BottomNavigationBarDemo> {
       // TODO: implement build
       return BottomNavigationBar(
           currentIndex: _currentIndex,
-          onTap: _onTapHandler,
-          type: BottomNavigationBarType.fixed,
-          fixedColor: Colors.black,
+          onTap: _onTapHandler,   // 激活状态，onTap 会执行 _onTapHandler 方法
+          type: BottomNavigationBarType.fixed,  // 设置成固定的，否则items超过3个，样式会发生改变，变成白色了
+          fixedColor: Colors.black,   // 激活状态下的背景颜色
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.explore),
